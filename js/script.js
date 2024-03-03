@@ -16,3 +16,10 @@ if (close) {
         s1bag.classList.remove("hide");
     })
 }
+
+document.onreadystatechange = function () {
+    if (document.readyState === "complete") {
+      document.querySelector(".loader").style.display = "none";
+    }
+  };
+  
